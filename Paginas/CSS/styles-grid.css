@@ -89,9 +89,9 @@ body{
     color: #000;
 }
 
-.menu li a:hover{
-    border-bottom: 1px solid #fff;
-    transition: .6s;
+.navegador .menu li a:hover{
+    border-bottom: 1px solid #000;
+    transition: all 5s ease;
 }
 
 
@@ -147,6 +147,11 @@ body{
         display: block;
         padding: 20px;
         color: #fff;
+    }
+
+    .menu li a:hover{
+        border-bottom: 1px solid #fff;
+        transition: all 5s ease;
     }
 
     .icono-menu{
