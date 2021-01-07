@@ -1,0 +1,405 @@
+/* RESET CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* EDICION GENERAL-------------------------------------------------------------------------------------------------------------*/
+
+body{
+    font-family: 'Open sans', sans-serif;
+}
+
+h1{
+    font-size: 44px;
+    color: #f5f0ed;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+
+h1,h2,h3{
+    font-weight: bold;
+}
+
+/* EDICION DEL NAV-------------------------------------------------------------------------------------------------------------*/
+
+.contenedor_head{
+    background-image: url(../Imagenes/Fondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 733px;
+    border: 1px solid #000;
+}
+
+.menu{
+    display: none;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+}
+
+.menu:hover{
+    background: rgba(49, 48, 48, 0.4);
+    cursor: pointer;
+}
+
+.navegacion{
+    max-width: 100%;
+    max-height: 20%;
+}
+
+.imagen_nav{
+    margin: 20px;
+}
+
+ul{
+    display: inline-block;   
+    position: absolute;
+    left: 65%;
+    top: 4%;
+}
+
+ul li{
+    padding: 15px;
+    float: left;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #f5f0ed;
+}
+
+ul li:hover{
+    background: rgba(82, 82, 82, 0.4);
+}
+
+.titulo_nav{
+    text-align: center;
+    height: 80%;
+}
+
+.titulo_nav h1{
+    position: relative;
+    top:35%;
+}
+
+.titulo_nav p{
+    color: #f5f0ed;
+    position: relative;
+    top:45%;
+}
+
+/* EDICION DEL CONTENEDOR 2-------------------------------------------------------------------------------------------------------------*/
+
+.contenedor2{
+    max-height: 30%;
+    overflow: hidden;
+}
+
+.caja1{
+    width: 50%;
+    float: left;
+    background: #d03b40;
+    padding: 60px 0px;
+    text-align: center;
+}
+
+.caja1 h3{
+    margin: 15px 0;
+    color: #ded6c0;
+}
+
+.caja2{
+    width: 50%;
+    float: left;
+    background: #ded6c0;
+    padding: 60px 0px;
+    text-align: center;
+}
+
+.caja2 h3{
+    margin: 15px 0;
+    color: #d03b40;
+}
+
+.caja1 p{
+    color: #ded6c0;
+}
+
+.caja2 p{
+    color: #d03b40;
+}
+
+/* EDICION DEL CONTENEDOR 3-------------------------------------------------------------------------------------------------------------*/
+
+.contenedor3{
+    background-image: url(../Imagenes/Fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    text-align: center;
+    color:#f5f0ed;
+}
+
+.contenedor3 h2{
+    position: relative;
+    top: 30%;
+}
+
+.contenedor3 p{
+    position: relative;
+    top: 35%;
+}
+
+.contenedor3 input{
+    position: relative;
+    top: 40%;
+    color: #f5f0ed;;
+    background: transparent;
+    border: 2px solid #f5f0ed;
+    padding: 10px 15px;
+}
+
+.contenedor3 input:hover{
+    background: rgba(42, 41, 41, 0.4)
+}
+
+
+/* EDICION DEL CONTENEDOR 4-------------------------------------------------------------------------------------------------------------*/
+
+.contenedor4{
+    background: rgba(222, 214, 192, 0.15);
+    overflow: hidden;
+    color: #3c3c3b;
+}
+
+.caja_pan{
+    float: left;
+    width: 42%;
+    padding: 30px;
+}
+
+.imagen_pan{
+    float: left;
+    width:30%;
+    margin: 2px;
+}
+
+.contenedor4_text1{
+    float: left;
+    width:60%;
+    position: relative;
+    top:40px;
+}
+
+.contenedor4_text1 h3{
+    margin-bottom: 10px;
+}
+
+.caja_tarta{
+    float: left;
+    width: 45%;
+    padding: 30px;
+}
+
+.imagen_tarta{
+    float: left;
+    width:30%;
+    margin: 10px;
+}
+
+.contenedor4_text2{
+    float: left;
+    width:60%;
+    position: relative;
+    top:40px;
+}
+
+.contenedor4_text2 h3{
+    margin-bottom: 10px;
+}
+
+.caja_dulce{
+    float: left;
+    width: 42%;
+    padding: 30px;
+}
+
+.imagen_dulce{
+    float: left;
+    width:30%;
+    margin: 10px;
+}
+
+.contenedor4_text3{
+    float: left;
+    width:60%;
+    position: relative;
+    top:40px;
+}
+
+.contenedor4_text3 h3{
+    margin-bottom: 10px;
+}
+
+.caja_eco{
+    float: left;
+    width: 45%;
+    padding: 30px;
+}
+
+.imagen_eco{
+    float: left;
+    width:30%;
+    margin: 10px;
+}
+
+.contenedor4_text4{
+    float: left;
+    width:60%;
+    position: relative;
+    top:40px;
+}
+
+.contenedor4_text4 h3{
+    margin-bottom: 10px;
+}
+
+/* EDICION DEL CONTENEDOR 5-------------------------------------------------------------------------------------------------------------*/
+
+.contenedor5{
+    overflow: hidden;
+    max-height: 30%;
+}
+
+.contenedor5_caja1{
+    background: #ded6c0;
+    color: #d03b40;
+    float: left;
+    width: 50%;
+    text-align:center;
+    padding: 60px 0;
+}
+
+.contenedor5_caja1 h3{
+    margin-bottom: 20px;
+}
+
+.contenedor5_caja2{
+    background: #d03b40;
+    color: #ded6c0;
+    float: left;
+    width: 50%;
+    text-align:center;
+    padding: 60px 0;
+}
+
+.contenedor5_caja2 h3{
+    margin-bottom: 20px;
+}
+
+/* EDICION DEL CONTENEDOR 5-------------------------------------------------------------------------------------------------------------*/
+
+.footer{
+    background: #5a121a;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+/* EDICION DEL RESPONSIVE-------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1450px){
+    ul{
+        position: relative;
+        left:300px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .caja_pan, .caja_tarta, .caja_dulce, .caja_eco{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    ul li{
+        float: none;
+        display: none;
+    }
+    
+    .menu{
+        display: inline-block;
+        position: relative;
+        left: 65%;
+        top: -30px;
+    }
+    
+    .contenedor5_caja1, .contenedor5_caja2{
+        float: none;
+        width: 100%;
+    }
+    
+    .caja1, .caja2{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .menu{
+        display: inline-block;
+        position: relative;
+        left: 45%;
+        top: -30px;
+    }
+}

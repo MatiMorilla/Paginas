@@ -1,0 +1,196 @@
+/* RESET DE CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* EDICIONES GENERALES----------------------------------------------------------------
+------------------------------------------------------------*/
+
+body{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    color:#fff;
+    font-size: 18px;
+}
+
+.contenedor{
+    background: rgb(184, 208, 222);
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.3),
+                -5px 5px 8px rgba(0,0,0,0.3);
+
+}
+
+/* EDICIONES DEL NAV----------------------------------------------------------------
+------------------------------------------------------------*/
+.navegador{
+    background: rgb(72, 99, 195);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+.nav_img{
+    margin: 10px 30px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    margin: 15px 30px;
+}
+
+ul li a{
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+ul li a:hover{
+    background: rgba(255, 255, 255, 0.215);
+    transition: .6s;
+    border-radius: 5px;
+}
+
+/* EDICIONES DEL CUERPO----------------------------------------------------------------
+------------------------------------------------------------*/
+
+.contenedor2{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cuerpo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.cuerpo_p{
+    background: rgb(255, 240, 240);
+    padding: 15px;
+    margin: 10px;
+    color:#000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+
+
+.sub_cuerpo{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.cuerpo_aside{
+    background: rgb(255, 240, 240);
+    padding: 15px;
+    margin: 10px;
+    color:#000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+
+/* EDICIONES DEL FOOTER----------------------------------------------------------------
+------------------------------------------------------------*/
+.foter{
+    background: rgb(72, 99, 195);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 100%;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+
+/* EDICIONES DEL RESPONSIVE----------------------------------------------------------------
+------------------------------------------------------------*/
+
+@media screen and (max-width: 1100px){
+    .contenedor{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .navegador{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    
+    .nav_img{
+        align-self: center;
+    }
+
+    ul{
+        border-top: 2px solid #fff;
+        margin: 5px;
+        display: flex;
+    }
+
+    ul li{
+        margin: 20px;
+        align-self: center;
+    }
+
+    .contenedor2{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

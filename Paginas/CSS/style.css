@@ -1,0 +1,91 @@
+body{
+    background: #30e6bc;
+}
+
+.contenedor{
+    background: #fff;
+    width: 1200px;
+    margin: 10px auto;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+}
+
+div div{
+    background: #434faf;
+    text-align: center;
+    margin: 15px;
+    border-radius: 3px;
+}
+
+.cabezera{
+    padding: 40px;
+}
+
+.cuerpo1{
+    padding: 100px;
+}
+
+.contenedor2{
+    overflow: hidden;
+    background: #fff;
+}
+
+.cuerpo2{
+    float: left;
+    width: 555px;
+    height: 200px;
+    margin: 0;
+}
+
+.cuerpo3{
+    float:right;
+    width: 555px;
+    height: 200px;
+    margin: 0;
+}
+
+.cuerpo4{
+    height: 200px;
+}
+
+.contenedor3{
+    overflow:hidden;
+    background: #fff;
+}
+
+.pie1{
+    float: left;
+    width: 555px;
+    margin: 0;
+    height: 150px;
+}
+
+.pie2{
+    float: right;
+    width: 555px;
+    margin: 0;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

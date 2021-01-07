@@ -1,0 +1,97 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #A7AAB4;
+}
+
+.container{
+	width: 1200px;
+	background: #fff;
+	margin: 20px auto;
+}
+
+.cabezera{
+	background: #294FCB;
+	overflow: hidden;
+}
+
+.cabezeraImg{
+	float: left;	
+}
+
+.img{
+	width: 300px;
+	background: brown;
+	padding: 35px;
+	margin: 25px 70px;
+	text-align: center;
+}
+
+.nav{
+	float: left;
+	margin: 50px;
+	padding: 10px;
+}
+
+
+ul > li{
+	float: left;
+	list-style: none;
+}
+
+ul > li > a{
+	text-align: center;
+	text-decoration: none;
+	padding: 15px;
+	font-size: 22px;
+	color: #ccc;
+	border-radius: 5px;
+}
+
+ul > li > a:hover{
+	background: #1B3CA7;
+	transition: 1s;
+}
+
+.cuerpo{
+	overflow: hidden;
+}
+
+.subTitulo{
+	text-align: center;
+	padding: 8px;
+	background: #294FCB;
+	color: #fff;
+}
+
+.caja{
+	float:left;
+	width: 350px;
+	margin: 15px;
+	padding: 10px;
+
+}
+
+p{
+	margin: 10px;
+}
+
+.caja:hover{
+	background: #aaccbb;
+}
+
+.boton{
+	padding: 15px;
+	background: #294FCB;
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+}
+
+.boton:hover{
+	background: #1B3CA7;
+	transition: .3s;
+}

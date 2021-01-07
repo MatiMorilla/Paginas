@@ -1,0 +1,150 @@
+body{
+    font-family: 'Nerko One', cursive;
+    background: #ddb7b7;
+}
+
+.hoja{
+    background: #f7e9e9;
+    max-width: 75%;
+    margin: 10px auto;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.4);
+}
+
+.menu{
+    display: none;
+    background: #ddb7b7;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.menu:hover{
+    box-shadow: 3px 3px 10px rgba(0,0,0, .8);
+}
+
+.menu a{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.nav{
+    background: #d16a6a;
+    margin:10px;
+    min-height: 3em;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #960000;
+}
+
+ul li:hover{
+    background: #ffd5d5;
+    transition: .6s;
+}
+
+.contenedor_imagenes{
+    background: #d16a6a;
+    margin:10px;
+    min-height: 20em;
+    overflow: hidden;
+}
+
+.imagen2{
+    border: 1px solid black;
+    min-height: 20em;
+    margin: 10px;
+    background: url(../Imagenes/ancha.jpg);
+    background-size: contain;
+    background-repeat: round;
+    border-radius: 5px;
+}
+
+.contenedor_texto{
+    background: #ccc;
+    margin: 10px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.parrafo1, .parrafo2{
+    min-height: 3em;
+    float: left;
+    padding: 5px;
+    border:1px solid #000;
+    margin: 10px;
+}
+
+.parrafo1{
+    width: 50%;
+}
+
+.parrafo2{
+    width: 43%;
+}
+
+@media screen and (max-width: 1300px){
+    .parrafo1{
+        width:48%;
+    }
+    
+    .parrafo2{
+        width:40%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .imagen2{
+        position: relative;
+        top: -130px;
+    }
+    
+    .contenedor_texto{
+        position: relative;
+        top: -125px;
+    }
+    
+    .nav{
+        position: relative;
+        top: 800px;
+    }
+    
+    .nav ul{
+        margin: 0;
+        padding: 5px;
+    }
+    
+    .nav ul li{
+        display: block;
+        float: none;
+        margin: 0;
+        padding: 0;     
+    }
+    
+    .menu{
+        display: block;       
+        text-align: center;
+    }
+    
+    .parrafo1,.parrafo2{
+        width: 95%;
+        float:none;
+    }
+}
+
+
+

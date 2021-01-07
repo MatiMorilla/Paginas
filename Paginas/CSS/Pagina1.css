@@ -1,0 +1,179 @@
+/*EDICIO LAYAOUT----------------------------------
+-----------------------------------------------------------------------*/
+body{
+    font-family:'Roboto', sans-serif;
+    font-size: 16;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(5, auto);
+    gap: 20px;
+    grid-template-areas: 
+               "header header header"
+               "title title title"
+               "main main main"
+               "aside aside aside"
+               "footer footer footer";
+}
+
+
+.header{
+    grid-area: header;
+    grid-column: header;
+    grid-row: header;
+    background: rgb(147, 147, 147);
+}
+
+.title{
+    grid-area: title;
+    grid-column: title;
+    grid-row: title;
+}
+
+.main{
+    grid-area: main;
+    grid-column: main;
+    grid-row: main;
+}
+
+.parrafo{
+    grid-area: aside;
+    grid-column: aside;
+    grid-row: aside;
+}
+
+.footer{
+    grid-area: footer;
+    grid-column: footer;
+    grid-row: footer;
+    background: #000;
+}
+
+/*EDICIO NAV----------------------------------
+-----------------------------------------------------------------------*/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.img-nav{
+   margin-left: 3.125rem;
+}
+
+.menu{
+    display: flex;
+    margin-right: 20px;
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    margin: 0.625rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.menu a:hover{
+    background: #ffabac;
+}
+
+.menu ul{
+    display: none;
+    visibility: hidden;
+}
+
+.menu li:hover ul{
+    display: block;
+    visibility: visible;
+    background: rgb(147, 147, 147);
+    position: absolute;
+    right: 10.9375rem;
+}
+
+
+/*EDICIO TITLE----------------------------------
+-----------------------------------------------------------------------*/
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1{
+    font-size: 6.25rem;
+}
+
+
+/*EDICIO MAIN----------------------------------
+-----------------------------------------------------------------------*/
+
+.main{
+    height: 11.25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #000;
+    margin-bottom: 1.25rem;
+}
+
+.cajas{
+    width: 10rem;
+    height: 8.75rem;
+    background: #fff;
+    margin-bottom: -8.75rem;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.25);
+    border-radius: 3px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*EDICIO PARRAFO----------------------------------
+-----------------------------------------------------------------------*/
+
+.parrafo{
+    margin-top: 1.25rem;
+}
+
+.parrafo h2{
+    font-size: 1.875rem;
+}
+
+.parrafo p{
+    margin: 0.9375rem 1.25rem;
+}
+
+/*EDICIO FOOTER----------------------------------
+-----------------------------------------------------------------------*/
+
+.footer{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p{
+    margin: 0.9375rem;
+    padding: 0.625rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono{
+    margin-right: 70px;
+    font-size: 20px;
+    color: #fff;
+}
