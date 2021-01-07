@@ -23,6 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .card{
@@ -100,7 +101,7 @@ body{
     opacity: 0;
 }
 
-.container .card:hover span{
+.container:hover span{
     opacity: 1;
 }
 
