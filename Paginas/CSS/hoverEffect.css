@@ -27,85 +27,21 @@ body{
 }
 
 .card{
-    width: 350px;
-    height: 400px;
-    padding: 20px;
-    text-align: center;
-    background: #26248a;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: all .3s ease;
-    text-shadow: 1px 1px 20px rgb(117, 115, 115);
     position: relative;
     overflow: hidden;
-    border-radius: 3px;
 }
 
-.content h2{
-    font-size: 80px;
-    color:#fff;
-    opacity: 0.4;
-    z-index: 1;
-    transform: translate(40%, 80%);
-}
 
-.content:hover h2{
-    opacity: 1;
-    color: #243ed1;
-    transform: translate(40%, -70%);
-    transition: all .3s ease;
-}
-
-.content h3{
-    font-size: 20px;
-    color:#fff;
-    opacity: 0.4;
-    text-transform: uppercase;
-    z-index: 2;
-    transform: translate(0, -100px);
-}
-
-.content:hover h3{
-    opacity: 1;
-    transition: all .3s ease;
-}
-
-.content p{
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0.3;
-    z-index: 3;
-    transform: translate(0, -40%);
-}
-
-.content:hover p{
-    opacity: 1;
-    color: #fff;
-    transition: all .3s ease;
-}
-
-.content::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: #2d1147;
-}
-
-.container span{
+.card span{
     transition: 0.5s;
     opacity: 0;
 }
 
-.container:hover span{
+.card:hover span{
     opacity: 1;
 }
 
-.container span:nth-child(1){
+.card span:nth-child(1){
     position: absolute;
     top: 0;
     left: 0;
@@ -126,7 +62,7 @@ body{
     }
 }
 
-.container span:nth-child(2){
+.card span:nth-child(2){
     position: absolute;
     top: 0;
     right: 0;
@@ -148,7 +84,7 @@ body{
     }
 }
 
-.container span:nth-child(3){
+.card span:nth-child(3){
     position: absolute;
     bottom: 0;
     right: 0;
@@ -169,7 +105,7 @@ body{
     }
 }
 
-.container span:nth-child(4){
+.card span:nth-child(4){
     position: absolute;
     bottom: 0;
     left: 0;

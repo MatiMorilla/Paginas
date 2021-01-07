@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#fff, #fff, #eef, #dfe1fc);
+    background: linear-gradient(#fff, #eef, #c3c6f8);
 }
 
 :root{
