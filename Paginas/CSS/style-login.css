@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#fff, #fff, #eef, #dfe1fc);
+}
+
+:root{
+    --color-form: #7682ff;
+}
+
+/* ESTILO FORMULARIO ------------------------
+----------------------------------------------------------------- */
+.formulario{
+    width: 500px;
+    height: 400px;
+    margin: 0 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    border: 1px solid  var(--color-form);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.formulario input{
+    width: 90%;
+    height: 30px;
+    background: none;
+    border:none;
+    margin: 5px 0;
+    outline: 0;
+}
+
+.formulario .label{
+    width: 90%;
+    height: 30px;
+    pointer-events: none;
+    transform: translateY(-120%);
+    border-bottom: 1px solid rgba(0,0,0,.25);
+    position: relative;
+}
+
+.formulario .label::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -1px;
+    left:0;
+    border-bottom: 3px solid var(--color-form);
+    transform: translateX(-150%);
+    transition: all .25s ease;
+}
+
+.label .lbl-text{
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-5px);
+    transition: all .3s ease;
+}
+
+.formulario input:focus + .label .lbl-text,
+.formulario input:valid + .label .lbl-text{
+    transform: translateY(-150%);
+    font-size: 16px;
+    color:var(--color-form);
+}
+
+.formulario input:focus + .label::after,
+.formulario input:valid + .label::after{
+    transform: translateX(0);
+}
+
+/* ESTILO BOTON ------------------------
+----------------------------------------------------------------- */
+
+.form-btn{
+    height: 30px;
+    background: none;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    outline: 0px;
+    font-size: 20px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.form-btn::after,
+.form-btn::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -1px;
+    left:-10px;
+    border-bottom: 3px solid var(--color-form);
+    transition: all .25s ease;
+}
+
+.form-btn:hover::before{
+    transform: translateY(-35px);
+}
+
