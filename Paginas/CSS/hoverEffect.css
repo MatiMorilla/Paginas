@@ -15,17 +15,6 @@ body{
     --color-hover: rgb(0, 174, 255);
 }
 
-.container{
-    height: 100%;
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
 .card{
     position: relative;
     overflow: hidden;
