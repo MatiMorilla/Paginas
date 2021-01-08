@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(#eee, #689);
+}
+
+:root{
+    --w-hover: 20%;
+    --h-hover: 2px;
+    --color-hover: #fa456b;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.card span{
+    transition: all 0.5s ease;
+}
+
+.card:hover span:nth-child(1),
+.card:hover span:nth-child(4){
+    width: 100%;
+}
+
+.card:hover span:nth-child(2),
+.card:hover span:nth-child(3){
+    height: 100%;
+}
+
+.card span:nth-child(1){
+    position:absolute;
+    top:0;
+    left:0;
+    width: var(--w-hover);
+    height: var(--h-hover);
+    background: var(--color-hover);
+}
+
+.card span:nth-child(2){
+    position:absolute;
+    top:0;
+    left:0;
+    width: var(--h-hover);
+    height: var(--w-hover);
+    background: var(--color-hover);
+}
+
+.card span:nth-child(3){
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: var(--h-hover);
+    height: var(--w-hover);
+    background: var(--color-hover);
+}
+
+.card span:nth-child(4){
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: var(--w-hover);
+    height: var(--h-hover);
+    background: var(--color-hover);
+}
+
+
+/* MISMO EFECTO PERO AL REVES */
+
+/* .card span:nth-child(1){
+    position:absolute;
+    top:0;
+    right:0;
+    width: var(--w-hover);
+    height: var(--h-hover);
+    background: var(--color-hover);
+}
+
+.card span:nth-child(2){
+    position:absolute;
+    top:0;
+    right:0;
+    width: var(--h-hover);
+    height: var(--w-hover);
+    background: var(--color-hover);
+}
+
+.card span:nth-child(3){
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: var(--h-hover);
+    height: var(--w-hover);
+    background: var(--color-hover);
+}
+
+.card span:nth-child(4){
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: var(--w-hover);
+    height: var(--h-hover);
+    background: var(--color-hover);
+} */
