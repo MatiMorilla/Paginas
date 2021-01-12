@@ -1,18 +1,18 @@
-*{
+/* *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
-}
+} */
 
-body{
+/* body{
     height: 100vh;
     background: linear-gradient(#eee, #689);
-}
+} */
 
 :root{
-    --w-hover: 20%;
-    --h-hover: 2px;
-    --color-hover: #fa456b;
+    --w-hover: 10%;
+    --h-hover: 3px;
+    --color-hover: #ff0000;
 }
 
 .container{
@@ -23,9 +23,6 @@ body{
 }
 
 .card{
-    width: 200px;
-    height: 200px;
-    background: #fff;
     position: relative;
     overflow: hidden;
 }
@@ -58,7 +55,8 @@ body{
     top:0;
     left:0;
     width: var(--h-hover);
-    height: var(--w-hover);
+    /* height: var(--w-hover); */
+    height: 40%;
     background: var(--color-hover);
 }
 
@@ -67,7 +65,8 @@ body{
     bottom:0;
     right:0;
     width: var(--h-hover);
-    height: var(--w-hover);
+    /* height: var(--w-hover); */
+    height: 40%;
     background: var(--color-hover);
 }
 
