@@ -304,6 +304,10 @@ section{
     text-align: center;
 }
 
+.border-btn{
+    border: 2px solid #ff0000;
+}
+
 /* CONTACT ME -------------------------
 ------------------------------------------------------------------------------*/
 
@@ -424,7 +428,7 @@ section{
         top: 0;
         right: 0;
         z-index: 10;
-        transform: translate(100%);
+        transform: translate(150%);
         transition: 0.55s ease;
     }
 
@@ -513,7 +517,7 @@ section{
     }
 
     .contact-grid .contact-card{
-        margin: 20px 0;
+        margin: 20px -10px;
         grid-template-columns: 1fr 4fr;
     }
 
@@ -573,4 +577,134 @@ section{
     .contact-container{
         margin: 150px auto;
     }
+}
+
+@media screen and (max-width: 650px)
+{
+    .name-title{
+        transform: translate(40px, -50px);
+    }
+    
+    .btn-portafolio{
+        transform: translate(40px, -250px);
+    }
+    
+    .service h2{
+        font-size: 3em;
+    }
+    
+    .tarjets{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 18.75em;
+    }
+        
+    .projects-container .project-title{
+        font-size: 3em;
+        transform: translate(35px);
+    }
+    
+    
+    .projects-container .project-cards{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-auto-rows: 340px;
+        gap: 10px
+    }
+    
+    .project-cards .project-item{
+        color: #fff;
+        padding: 10px 40px;
+        background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    
+    .project-item h3{
+        margin: 0;
+        font-size: 25px;
+    }
+    
+    .project-item h4{
+        margin: 5px 0;    
+    }
+    
+    .project-item p{
+        margin: 0px;
+        line-height: 20px;
+    }
+    
+    .about-container{
+        margin-top: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    .about-info{
+        height: 350px;
+        padding: 5px 20px;
+    }
+    
+    .about-container .about-img{
+        transform: translate(0, 80px);
+    }
+
+    .about-container .about-img img{
+        width: 250px;
+        height: 350px;
+    }
+
+    .about-container  .about-img::after{
+        content: '';
+        position: absolute;
+        left: -33px;
+        top: 19px;
+        height: 118%;
+        width: 118%;
+        z-index: -1;
+    }
+    
+    .about-info h2{
+        font-size: 3em;
+    }
+    
+    .about-info p{
+        line-height: 22px;
+    }
+    
+    .about-info .about-btn{
+        width: 80%;
+        margin: 10px auto;
+        padding: 23px 0px;
+    }
+    
+    .contact-container h2{
+        font-size: 3em;
+    }
+        
+    .contact-container .contact-grid{
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .info{
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 20px;
+    }
+    
+    .contact-card i{
+        font-size: 2em;
+    }
+    
+    .contact-card h3{
+        font-size: 20px;
+    }
+    
 }

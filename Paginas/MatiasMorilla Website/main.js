@@ -25,3 +25,16 @@ li_menu.forEach((e)=>{
         document.querySelector(".menu").classList.remove("aparecer");
     })
 })
+
+window.addEventListener("resize", ()=>{
+    let screenW = window.innerWidth;  
+    if(screenW <= 675) 
+    {
+        document.querySelector(".about-btn").classList.remove("card");
+        document.querySelector(".about-btn").classList.add("border-btn");
+    }
+    else{
+        document.querySelector(".about-btn").classList.add("card");
+        document.querySelector(".about-btn").classList.remove("border-btn");
+    }
+})
