@@ -611,16 +611,6 @@ section{
         gap: 10px
     }
     
-    .project-cards .project-item{
-        color: #fff;
-        padding: 10px 40px;
-        background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
-    
     .project-item h3{
         margin: 0;
         font-size: 25px;
@@ -676,7 +666,7 @@ section{
     .about-info .about-btn{
         width: 80%;
         margin: 10px auto;
-        padding: 23px 0px;
+        padding: 15px 0px;
     }
     
     .contact-container h2{
