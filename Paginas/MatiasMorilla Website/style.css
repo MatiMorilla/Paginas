@@ -28,6 +28,8 @@ section{
 
 :root{
     --w-container: 75%;
+    --color-main: #FF0000;
+    /* --color-main: #00a2ff; */
 }
 
 /* HEADER -------------------------
@@ -72,7 +74,7 @@ section{
 }
 
 .nav-name span{
-    color: #ff0000;
+    color:var(--color-main);
 }
 
 .menu{
@@ -89,7 +91,7 @@ section{
 }
 
 .menu li a:hover{
-    color: #ff0000;
+    color:var(--color-main);
     transition: .45s;
 }
 
@@ -117,7 +119,7 @@ section{
 }
 
 .btn-portafolio{
-    color: #ff0000;
+    color:var(--color-main);
     padding: 10px 30px;
     font-weight: 400;
     font-size: 25px;
@@ -149,7 +151,7 @@ section{
 }
 
 .service h2 span{
-    color: #ff0000;
+    color:var(--color-main);
 }
 
 .service p{
@@ -206,7 +208,7 @@ section{
 }
 
 .projects-container .project-title span{
-    color:#ff0000;
+    color:var(--color-main);
 }
 
 .projects-container .project-cards{
@@ -278,7 +280,7 @@ section{
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid #dc143c;
+	border: 7px solid var(--color-main);;
     z-index: -1;
 }
 
@@ -289,7 +291,7 @@ section{
 
 .about-info h2 span,
 .about-info h4{
-    color:#ff0000;
+    color:var(--color-main);
 }
 
 .about-info p{
@@ -305,7 +307,7 @@ section{
 }
 
 .border-btn{
-    border: 2px solid #ff0000;
+    border: 2px solidvar(--color-main);
 }
 
 /* CONTACT ME -------------------------
@@ -324,7 +326,7 @@ section{
 }
 
 .contact-container h2 span{
-    color:#ff0000;
+    color:var(--color-main);
 }
 
 .contact-container .contact-grid{
