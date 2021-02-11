@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(-45deg, rgb(31, 128, 207) 50%, rgb(0, 36, 144) 50%);
+    padding: 100px;
+}
+
+.carousel{
+    min-height: 500px;
+}
+
+.carousel .carousel-item{
+    width: 500px;
+    height: 500px;
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+} 
