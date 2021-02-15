@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         dist: -80,
         shift: 3,
         padding: 5,
-        numVisiblw: 3,
+        numVisible: 3,
         indicators: true
     })
 });
