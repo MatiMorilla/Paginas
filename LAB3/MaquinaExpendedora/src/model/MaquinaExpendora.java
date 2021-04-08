@@ -44,10 +44,10 @@ public class MaquinaExpendora {
 	private Boleto boleto;
 	
 	
-	public MaquinaExpendora(int numeroDeSerie)
+	public MaquinaExpendora(int precioBoleto)
 	{
-		this.numeroDeSerie = numeroDeSerie;
-		precioBoleto = 0;
+		numeroDeSerie = (int)Math.random()*1000 + 1;
+		this.precioBoleto = precioBoleto;
 		saldoActual = 0;
 		cantBoletosImpresos = 0;
 		stockActual = 1000;
