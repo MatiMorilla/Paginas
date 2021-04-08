@@ -12,12 +12,12 @@ public class Main {
 		scan = new Scanner(System.in);
 		MaquinaExpendora m1;
 		int opcion = 0;
-		int codigoDeSerie = 0;
+		int precioBoleto = 0;
 		float nuevoPrecio;
 		
-		System.out.println("Ingrese el codigo de serie: ");
-		codigoDeSerie = scan.nextInt();
-		m1 = new MaquinaExpendora(codigoDeSerie);
+		System.out.println("Ingrese el precio del boleto: ");
+		precioBoleto = scan.nextInt();
+		m1 = new MaquinaExpendora(precioBoleto);
 		do
 		{
 			mostrarMenu();
@@ -33,7 +33,7 @@ public class Main {
 				System.out.println("Maquina apagada");
 				break;
 			case 3:
-				System.out.println("Ingrese el precio: ");
+				System.out.println("Ingrese el nuevo precio: ");
 				nuevoPrecio = scan.nextFloat();
 				m1.modificarPrecio(nuevoPrecio);
 				break;
@@ -42,7 +42,6 @@ public class Main {
 				break;
 			case 5:
 				System.out.println("Dinero retirado \n" + m1.retirarDinero());
-				
 				break;
 			case 6:
 				break;
